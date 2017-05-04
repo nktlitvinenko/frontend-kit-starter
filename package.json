@@ -1,0 +1,52 @@
+{
+  "name": "frontend-environment",
+  "version": "0.1.0",
+  "description": "Frontend environment with NPM, Gulp, Bower, Angular2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nktlitvinenko/frontend-kit-starter.git"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "compile": "gulp compile",
+    "start": "gulp",
+    "postinstall": "typings install"
+  },
+  "author": "Nikita Litvinenko",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-environments": "^0.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-tslint": "^8.0.0",
+    "gulp-typescript": "^3.1.6",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "ts-node": "^3.0.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "@angular/upgrade": "^4.1.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.3.0",
+    "systemjs": "^0.20.12",
+    "zone.js": "^0.8.9"
+  }
+}

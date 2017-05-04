@@ -1,0 +1,12 @@
+# Logs
+npm-debug.log*
+
+# Compiled projcect
+build/
+
+# Dependency directories
+node_modules/
+src/assets/vendor/
+
+# Typings declaration files
+typings/
