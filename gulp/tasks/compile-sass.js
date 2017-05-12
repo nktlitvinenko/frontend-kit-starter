@@ -9,12 +9,12 @@ var dev          = env.development,
 var config       = require('../config');
 
 gulp.task('compile-sass', function() {
-    return gulp.src('src/**/*.{scss,sass}')
+    return gulp.src(config.paths.styles.src)
     .pipe(dev(sourcemaps.init()))
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
     .pipe(prod(cssnano()))
     /*.pipe(rename({suffix: '.min'}))*/
     .pipe(dev(sourcemaps.write('')))
-    .pipe(gulp.dest(config.buildDest));
+    .pipe(gulp.dest(config.paths.styles.dest));
 });

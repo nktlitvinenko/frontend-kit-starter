@@ -6,7 +6,10 @@ build/
 
 # Dependency directories
 node_modules/
-src/assets/vendor/
+bower_components/
 
 # Typings declaration files
 typings/
+
+# Visual Studio Code
+.vscode/

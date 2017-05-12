@@ -1,0 +1,19 @@
+{
+  "name": "frontend-starter-kit",
+  "description": "Frontend environment with NPM, Gulp, Bower, Angular2",
+  "authors": [
+    "Nikita Litvinenko"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nktlitvinenko/frontend-kit-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

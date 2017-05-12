@@ -12,4 +12,7 @@ gulp.task('watch', function() {
     gulp.watch('src/**/*.ts', ['compile-ts', browserSync.reload]).on('change', function(e) {
         console.log('TypeScript file ' + e.path + ' has been changed. Compiling.');
     });
+    gulp.watch('bower.json', ['bower', browserSync.reload]).on('change', function(e) {
+        console.log('Bower.json file has been changed. Compiling.');
+    });
 });

@@ -1,5 +1,5 @@
 {
-  "name": "frontend-environment",
+  "name": "frontend-starter-kit",
   "version": "0.1.0",
   "description": "Frontend environment with NPM, Gulp, Bower, Angular2",
   "repository": {
@@ -31,7 +31,8 @@
     "ts-node": "^3.0.2",
     "tslint": "^5.1.0",
     "typescript": "^2.3.2",
-    "typings": "^2.1.1"
+    "typings": "^2.1.1",
+    "wiredep": "^4.0.0"
   },
   "dependencies": {
     "@angular/common": "^4.1.0",
