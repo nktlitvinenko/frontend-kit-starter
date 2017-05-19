@@ -8,7 +8,7 @@ gulp.task('compile', function(cb) {
         'compile-ts', 
         'compile-sass', 
         'compile-html', 
-        'bower',
+        'compile-bower-components',
         cb
     );
 
