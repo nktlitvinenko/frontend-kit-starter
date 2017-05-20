@@ -1,61 +1,76 @@
 # Frontend starter kit
-Basic frontend environment with Angular2, TypeScript, Gulp, SASS, Bower
 
-#### 1. Prerequisites
+> Basic frontend environment with Angular2, TypeScript, Gulp, SASS, Bower
 
-*nodejs* must be installed on your system and the below global node packages must be installed:
+## Technologies
+
+- Gulp
+- Angular 4
+- TypeScript
+- SASS
+- Bower
+
+## Requirements and Use
+
+### Requirements
+
+*NodeJS* must be installed on your system and the below global node packages must be installed:
 
 - gulp
-
-> npm i -g gulp
-
 - gulp-cli
-
-> npm i -g gulp-cli
-
 - typings
-
-> npm i -g typings
-
 - typescript
-
-> npm i -g typescript
-
 - ts-node
 
-> npm i -g ts-node
+```bash
+$ npm i -g gulp
+$ npm i -g gulp-cli
+$ npm i -g typings
+$ npm i -g typescript
+$ npm i -g ts-node
+```
 
-#### 2. Cloning the repository
+### Use
 
-Clone the repository:
+```bash
+$ git clone https://github.com/nktlitvinenko/frontend-kit-starter.git
+$ cd frontend-kit-starter
+$ npm install
+$ npm run start
+```
 
-> git clone https://github.com/nktlitvinenko/frontend-kit-starter.git
+## Project structure
 
-Navigate to frontend-kit-starter directory:
+```
+.
+├── /node_modules/              # Node modules dependencies and packages.
+├── /bower_components/          # Bower dependencies and packages.
+├── /typings/                   # Typings.
+├── /build/                     # Compiled project.
+|   ├── /debug/                 # Debug configuration.
+|   └── /release/               # Production configuration.
+├── /gulp/                      # Gulp files.
+|   ├── /tasks/                 # Gulp tasks.
+|   └── /config.js              # Gulp config (contains paths and etc).
+├── /src/                       # Source files.
+|   ├── /app/                   # Angular app.
+|   |   ├── app.component.ts    # Main Angular component
+|   |   ├── app.html            # Template for main Angular component
+|   |   ├── app.module.ts       # Main Angular module
+|   |   ├── app.routing.ts      # Routing configuration
+|   |   └── main.ts             # Angular main file
+|   ├── /assets/                # Assets folder.
+|   |   ├── /fonts/             # Fonts.
+|   |   ├── /images/            # Images non compressed.
+|   |   └── /styles/            # SCSS or SASS style files.
+|   ├── /index.html             # Main template file of application.
+|   └── /system.config.js       # SystemJS configuration file
+└── gulpfile.js                 # Gulp automatization file.
+```
 
-> cd "your path to frontend-kit-starter"
+## License 
 
-#### 3. Installing dependencies
-
-Install dependencies by running the following command:
-
-> npm install
-
-`node_modules` and `typings` directories will be created during the install.
-
-#### 4. Building and starting the project
-
-Build the project by running the following command:
-
-> npm run compile
-
-`build\debug` or `build\release` will be created during the compilation
-
-Start the project by running the following command:
-
-> npm run start
-
-This command will execute compile automatically.
+The code is available under the [MIT](https://github.com/nktlitvinenko/frontend-kit-starter/blob/master/LICENSE) license.
 
 ## Thanks
 - Thanks to the user https://github.com/kolorobot I used his project https://github.com/kolorobot/angular2-typescript-gulp as a basis for my frontend environment
