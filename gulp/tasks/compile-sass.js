@@ -9,12 +9,30 @@ var dev          = env.development,
 var config       = require('../config');
 
 gulp.task('compile-sass', function() {
+    console.log(config.env);
+    if(config.env === 'production') {
+        compileSassProd();
+    } else {
+        compileSassDev();
+    }
+});
+
+function compileSassDev() {
+    console.log('compile sass dev');
     return gulp.src(config.paths.styles.src)
-    .pipe(dev(sourcemaps.init()))
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
-    .pipe(prod(cssnano()))
-    /*.pipe(rename({suffix: '.min'}))*/
-    .pipe(dev(sourcemaps.write('')))
+    .pipe(sourcemaps.write(''))
     .pipe(gulp.dest(config.paths.styles.dest));
-});
+}
+
+function compileSassProd() {
+    console.log('compile sass prod');
+    return gulp.src(config.paths.styles.src)
+    .pipe(sass())
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true}))
+    .pipe(cssnano())
+    /*.pipe(rename({suffix: '.min'}))*/
+    .pipe(gulp.dest(config.paths.styles.dest));
+}

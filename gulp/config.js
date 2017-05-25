@@ -7,6 +7,7 @@ var buildDest = prod() ? 'build/release' : 'build/debug';
 
 var config = {
     buildDest: prod() ? 'build/release' : 'build/debug',
+    env: prod() ? 'production' : 'development',
     paths: {
         styles: {
             src: 'src/**/*.{scss,sass}',
@@ -20,6 +21,10 @@ var config = {
             src: 'src/**/*.ts',
             dest: buildDest + '/'
         }
+    },
+    html_minifier_config : {
+        collapseWhitespace: true,
+        caseSensitive: true
     }
 };
 
